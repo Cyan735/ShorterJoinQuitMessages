@@ -1,4 +1,4 @@
-package cyan735.shortjoinquitmessages;
+package cyan735.shorterjoinquitmessages;
 
 import org.bukkit.ChatColor;
 import org.bukkit.event.EventHandler;
@@ -15,11 +15,13 @@ public final class ShorterJoinQuitMessages extends JavaPlugin implements Listene
         getServer().getPluginManager().registerEvents(this, this);
     }
 
+    //Set join Message
     @EventHandler
     public void onPlayerJoin(PlayerJoinEvent playerJoinEvent) {
         playerJoinEvent.setJoinMessage(ChatColor.GREEN + ">>> " + ChatColor.WHITE + playerJoinEvent.getPlayer().getName());
     }
 
+    //Set quit message
     @EventHandler
     public void onPlayerQuit(PlayerQuitEvent playerQuitEvent) {
         playerQuitEvent.setQuitMessage(ChatColor.RED + "<<< " + ChatColor.WHITE + playerQuitEvent.getPlayer().getName());

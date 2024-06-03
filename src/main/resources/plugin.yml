@@ -1,0 +1,4 @@
+name: ShorterJoinQuitMessages
+version: 'V2.0'
+main: cyan735.shorterjoinquitmessages.ShorterJoinQuitMessages
+api-version: '1.20'
